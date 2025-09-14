@@ -1,0 +1,134 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/your_custom_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Heading -->
+    <TextView
+        android:id="@+id/genderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What's your gender?"
+        android:textColor="#111111"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="6dp"/>
+
+    <TextView
+        android:id="@+id/genderSubtitle"
+        android:text="Let us know you better"
+        android:textSize="16sp"
+        android:textColor="#505050"
+        android:gravity="center"
+        android:layout_marginBottom="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Characters Row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp">
+
+        <!-- Male character -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/maleFrame"
+                android:layout_width="230dp"
+                android:layout_height="410dp"
+                android:layout_gravity="center">
+
+                <!-- Blue highlight, set to GONE by default -->
+                <View
+                    android:id="@+id/maleHighlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/highlight_background"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/maleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/your_male_character"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/maleLabel"
+                android:text="Male"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Female character -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/femaleFrame"
+                android:layout_width="230dp"
+                android:layout_height="410dp"
+                android:layout_gravity="center">
+
+                <View
+                    android:id="@+id/femaleHighlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/highlight_background"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/femaleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/your_female_character"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/femaleLabel"
+                android:text="Female"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

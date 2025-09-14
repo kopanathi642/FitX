@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitX3</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_workouts">Workouts</string>
+    <string name="menu_training">Training</string>
+    <string name="menu_community">Community</string>
+    <string name="menu_profile">Profile</string>
+</resources>
